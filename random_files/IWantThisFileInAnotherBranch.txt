@@ -2,3 +2,4 @@ This file was initially created on the 'practice-rebasing' branch.
 However, we also need it on the 'practice-cherry-pick' branch.
 We do not want to merge all changes from the 'practice-rebasing' branch
 into the 'practice-cherry-pick' branch.
+So, we use 'git cherry-pick'!
