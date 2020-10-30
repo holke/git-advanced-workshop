@@ -1,0 +1,44 @@
+#!/bin/bash
+
+#
+# This is a small script to check whether a given file contains
+# the line " ### Author: [NAME] "
+# Its sole purpose is to serve as a test script for our demonstration
+# of git hooks.
+#
+# Created by Johannes Holke, German Aerospace Center (DLR), 2020
+
+
+Usage="$0 [INPUT-FILES]"
+
+
+# Check if input files are given
+if [ x$1 = x ]
+then
+  # No input files given. Print usage.
+  echo No input files given.
+  echo
+  echo Usage: $Usage
+  exit 1
+fi
+ 
+# The return value will change to 1 if we find
+# any file without unique author information.
+retval=0
+
+for file in "$@"
+do
+  # Check the file for the string  "### Author: [Any letter]"
+  num_found=`grep "### Author: [a-zA-Z]" -c $file`
+  if [ $num_found -ne 1 ]
+  then
+    # String is either not present, or present multiple times	  
+    echo File $file is missing unique author information.
+    echo Found $num_found author lines.
+    # Set return value to 1
+    retval=1
+  fi
+done
+
+exit $retval
+
