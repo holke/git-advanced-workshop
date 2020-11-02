@@ -1,0 +1,51 @@
+#!/bin/sh
+#
+# A hook script to verify what is about to be committed.
+# This hook checks whether the code is properly document
+# with the '### Author: NAME' string.
+# Move into .git/hooks folder and name it "pre-commit".
+# Called by "git commit" with no arguments.  The hook should
+# exit with non-zero status after issuing an appropriate message if
+# it wants to stop the commit.
+#
+
+# Redirect output to stderr.
+exec 1>&2
+
+# This is the script that checks our coding conventions
+CHECK_SCRIPT=./scripts/check_code_for_author.scp
+
+nocontinue=0
+for file in `git diff --cached --name-only`
+# Iterate over all files in the current commit
+do
+  # only check existing files, this is necessary since if we rename or delete
+  # a file it is added to the committed files and we thus would try to check a
+  # nonexisting file.
+  if [ ! -e $file ]
+  then
+    continue
+  fi
+  # We only check .c, .cxx, .h and .hxx files
+  FILE_ENDING="${file##*.}"
+  if [ $FILE_ENDING = "c" -o $FILE_ENDING = "h" -o $FILE_ENDING = "cxx" -o $FILE_ENDING = "hxx" ]
+  then
+    echo "Checking file $file"
+    # check the source file
+    $CHECK_SCRIPT $file
+    retval=$?
+    # Check whether the script returned 0
+    if test $retval -ne 0 
+    then
+      echo "Coding convention check for $file failed."
+      echo "Aborting commit."
+      nocontinue=1
+    fi
+  fi
+done
+
+# Exit 1 if a file failed the check,
+# this will abort the commit.
+# Exit 0 if all files passed the check,
+# this will continue the commit.
+exit $nocontinue
