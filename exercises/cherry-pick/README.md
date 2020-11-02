@@ -34,7 +34,7 @@ Pick multiple commits, starting with `123456` and ending with `123459`:
 git cherry-pick 123456..123459
 ```
 
-Thats basically all you need to know about cherry-picking.
+That's basically all you need to know about cherry-picking.
 
 Of course `git cherry-pick` offers a variaty of options; see https://git-scm.com/docs/git-cherry-pick for more details.
 
