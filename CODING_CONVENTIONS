@@ -1,0 +1,10 @@
+All .c, .cxx, .h and .hxx files in this repository
+must contain author information.
+
+The information must be provided with the string
+
+"### Author: NAME"
+
+anywhere in the file.
+
+Only one author information per file is permitted.
