@@ -1,4 +1,4 @@
-## Cherry-pick
+# Cherry-pick
 
 `git cherry-pick` is a tool to apply existing commits from a different branch in the current branch.
 
