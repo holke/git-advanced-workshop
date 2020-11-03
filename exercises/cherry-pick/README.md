@@ -40,7 +40,7 @@ Of course `git cherry-pick` offers a variaty of options; see https://git-scm.com
 
 ### The exercise
 
-The branch `practice-rebasing` contains several commits that you need 
+The branch `practice-cherry-pick-pickfromhere` contains several commits that you need 
 in the branch `practice-cherry-pick`. You'll recognize them, since they mention 'cherry-pick' in their commit message.
 
 1. Identify the commits that you need to cherry-pick using `git log` or a tool such as [`gitk`](https://git-scm.com/docs/gitk).
