@@ -31,7 +31,7 @@ This command will open a dialog that shows you the last `N` commits on the curre
 
 Here is a picture of the dialog for `git rebase -i HEAD~3` for the current state of this repositories `main` branch.
 
-![](https://github.com/holke/github-advanced-techniques-holke/blob/main/exercises/rebase/images/rebase3.png "git rebase -i HEAD~3")
+![](https://github.com/holke/git-advanced-workshop/blob/main/exercises/rebase/images/rebase3.png "git rebase -i HEAD~3")
 
 
 The github provided help message already tells you about your options.

@@ -34,14 +34,14 @@ For example, to loop over all files currently marked for commit you can use the 
 ### The exercise
 
 Switch to the branch `practice-hooks`. 
-In this branch you will find the file [CODING_CONVENTIONS](https://github.com/holke/github-advanced-techniques-holke/blob/practice-hooks/CODING_CONVENTIONS).
+In this branch you will find the file [CODING_CONVENTIONS](https://github.com/holke/git-advanced-workshop/blob/practice-hooks/CODING_CONVENTIONS).
 The coding conventions specify that each `.c, .cxx, .h` and `.hxx` file in this repository must contain information about its author.
 This information must be present in the form `### Author: [NAME]` somewhere in the file.
 
-The script [scripts/check_code_for_author.scp](https://github.com/holke/github-advanced-techniques-holke/blob/practice-hooks/scripts/check_code_for_author.scp)
+The script [scripts/check_code_for_author.scp](https://github.com/holke/git-advanced-workshop/blob/practice-hooks/scripts/check_code_for_author.scp)
 can check a file for the precense of this author information and returns 0 if the information is prensent.
 
-The file [scrips/pre-commit](https://github.com/holke/github-advanced-techniques-holke/blob/practice-hooks/scripts/pre-commit) is a prepared commit hook
+The file [scrips/pre-commit](https://github.com/holke/git-advanced-workshop/blob/practice-hooks/scripts/pre-commit) is a prepared commit hook
 that performs the check for each file to be committed.
 
 #### Part A - apply the hook
