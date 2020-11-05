@@ -31,7 +31,7 @@ git cherry-pick 123456
 
 Pick multiple commits, starting with `123456` and ending with `123459`:
 ```bash
-git cherry-pick 123456..123459
+git cherry-pick 123456^..123459
 ```
 
 That's basically all you need to know about cherry-picking.
