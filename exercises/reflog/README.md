@@ -37,14 +37,14 @@ git checkout -b new-branch-at-state-before-rebase
 ### The exercise
 
 In this exercise we want to simulate that you messed up during interactive rebasing.
-If you are not familiar with interactive rebasing, do the [interactive rebase](https://github.com/holke/git-advanced-workshop/blob/main/exercises/rebase/README.md) exercise first.
+If you are not familiar with interactive rebasing, do the [interactive rebase](../rebase/README.md) exercise first.
 
 Checkout the branch `practice-reflog`.
 In the history of this branch, we find these two commits:
  
- [6586d11ed - VERY IMPORTANT COMMIT](https://github.com/holke/git-advanced-workshop/commit/6586d11ed4cd8e2fdb184cc44ddbd947398f19ae)
+ 6586d11ed - VERY IMPORTANT COMMIT
 
- [88d249c39 - Accidentally commit secret files...not again!](https://github.com/holke/git-advanced-workshop/commit/88d249c399056f3e8ac81ac2e165fcc0f00a4316)
+ 88d249c39 - Accidentally commit secret files...not again!
 
 
 1. Use `git rebase -i` to look at the last commits.
