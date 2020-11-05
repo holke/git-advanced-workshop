@@ -29,9 +29,12 @@ If you have any questions, feel free to contact the developers.
 
 ### Contributing
 
-We are happy to include more topics and to add to the existing topics.
-Please feel free to add the `exercises/*/README.md` files and to add your own topic to the `exercises`.
-Each exercise should have a branch `practice-*` on which the user can play around.
+We encourage everybody to contribute to this repository.
 
 To add your contributions to this repository fork it, add your changes and create a pull request.
 Additionally, add your name to the `AUTHOR` file.
+
+We are happy to include more topics and to include additions to the existing topics.
+Please feel free to edit the `exercises/*/README.md` files or add your own topics to the `exercises`.
+Each exercise should have a branch `practice-*` on which the user can play around.
+
