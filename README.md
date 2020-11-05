@@ -34,3 +34,4 @@ Please feel free to add the `exercises/*/README.md` files and to add your own to
 Each exercise should have a branch `practice-*` on which the user can play around.
 
 To add your contributions to this repository fork it, add your changes and create a pull request.
+Additionally, add your name to the `AUTHOR` file.
