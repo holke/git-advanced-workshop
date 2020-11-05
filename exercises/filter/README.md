@@ -59,7 +59,7 @@ print ("Debug") #gitignore
   
 2. Use `git diff` and verify that you see the changes.
 
-3. Now follow the instructions in [scripts/gitignore_filter.scp](scripts/gitignore_filter.scp) to install the gitignore filter.
+3. Now follow the instructions in [scripts/gitignore_filter.scp](gitignore_filter.scp) to install the gitignore filter.
 
 4. Use `git diff` again. Your changes should no longer appear in the file.
 
