@@ -13,7 +13,7 @@
 exec 1>&2
 
 # This is the script that checks our coding conventions
-CHECK_SCRIPT=./scripts/check_code_for_author.scp
+CHECK_SCRIPT=./exercises/hooks/check_code_for_author.scp
 
 nocontinue=0
 for file in `git diff --cached --name-only`
