@@ -1,0 +1,21 @@
+# Remove lines that either contain a single '#gitignore' string or
+# all lines in between two
+# '#gitignorebegin' and '#gitignoreend' strings.
+#
+# Written by Johannes Holke, German Aerospace Center (DLR), 2020
+
+sed -e "/#gitignorebegin/,/#gitignoreend/d" | sed -e "/#gitignore/d"
+
+#
+# To activate this script as a git filter, add the following lines to .git/config:
+#
+# [filter "gitignore"]
+#	clean = exercises/filter/gitignore_filter.scp
+#	smudge = cat
+#
+#
+# Additionally, add a line to .git/info/attributes for all file types that you want this filter
+# to apply to. For example, to apply this filter to all .py files, add:
+#
+# *.py  filter=gitignore
+#
