@@ -9,12 +9,12 @@ German Aerospace center (DLR).
 
 This repository collects information and exercises to the following topics:
 
-- Cherry-picking
-- Interactive rebasing
-- git reflog
-- Hooks
-- Filters
-- Additional worktrees
-- git bisect
+- [Cherry-picking](exercises/cherry-pick/README.md)
+- [Interactive rebasing](exercises/rebase/README.md)
+- [git reflog](exercises/reflog/README.md)
+- [Hooks](exercises/hooks/README.md)
+- [Filters](exercises/filter/README.md)
+- [Additional worktrees](exercises/second-worktree/README.md)
+- [git bisect](exercises/bisect/README.md)
 
 To Learn about git features and see the exercises read the files "exercises/*/README.md".
