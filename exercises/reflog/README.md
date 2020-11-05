@@ -1,6 +1,6 @@
 # git reflog
 
-As we learn in the exercise on [interactive rebase](https://github.com/holke/git-advanced-workshop/blob/main/exercises/rebase/README.md), we can
+As we learn in the exercise on [interactive rebase](../rebase/README.md), we can
 basically manipulate our complete history.
 But what, if we mess up? For example if we delete the wrong commit? 
 
@@ -15,7 +15,7 @@ git reflog
 we get a log of all of our actions back to the very first commit.
 Here is a screenshot of `git reflog` on the `practice-rebase` branch, right after we performed the first part of the rebasing exercise:
 
-![](https://github.com/holke/git-advanced-workshop/blob/main/exercises/reflog/images/reflog1.PNG "git reflog")
+![](images/reflog1.PNG "git reflog")
 
 Since in this local copy of the repo, we did nothing else than checking out the `practice-rebase` branch and rebasing it, the reflog is rather short.
 It starts at the bottom with the clone command. The second line from the bottom shows that we switched the branch.
