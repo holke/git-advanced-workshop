@@ -7,6 +7,9 @@ German Aerospace center (DLR).
 
 ### Exercises
 
+In order to learn about git, we recommend that you do the exercises in this repository.
+Before you start you should fork this repository.
+
 This repository collects information and exercises to the following topics:
 
 - [Cherry-picking](exercises/cherry-pick/README.md)
@@ -18,3 +21,16 @@ This repository collects information and exercises to the following topics:
 - [git bisect](exercises/bisect/README.md)
 
 To Learn about git features and see the exercises read the files "exercises/*/README.md".
+
+
+### Questions
+
+If you have any questions, feel free to contact the developers.
+
+### Contributing
+
+We are happy to include more topics and to add to the existing topics.
+Please feel free to add the `exercises/*/README.md` files and to add your own topic to the `exercises`.
+Each exercise should have a branch `practice-*` on which the user can play around.
+
+To add your contributions to this repository fork it, add your changes and create a pull request.
