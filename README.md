@@ -5,6 +5,8 @@ the talk "Advanced git techniques" by Johannes Holke on November 5th 2020 at the
 HPDA Sofware engineering workshop at the institute for software technology of the
 German Aerospace center (DLR).
 
+You can fork this repository and make the exercises to learn about various git features.
+
 ### Exercises
 
 In order to learn about git, we recommend that you do the exercises in this repository.
